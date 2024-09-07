@@ -9,11 +9,11 @@ import './style.css';
 function App() {
   return (
     <div className="todo-container">
-      <Header/>
-      <ToDoItem/>
-      <ToDoItem/>
-      <ToDoItem/>
-      <ToDoItem/>
+      <Header title="Daily schedule"/>
+      <ToDoItem text="Eat" completed={true}/>
+      <ToDoItem text="Code"/>
+      <ToDoItem text="Sleep"/>
+      <ToDoItem text="Repeat"/>
       <Button/>
     </div>
   );
