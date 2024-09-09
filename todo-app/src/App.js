@@ -14,7 +14,7 @@ function App() {
     <div className="todo-container">
      <CounterDemo/>
       <Header title="Daily schedule"/>
-      <ToDoItem text="Eat" completed={true}/>
+      <ToDoItem text="Eat" completed="true"/>
       <ToDoItem text="Code"/>
       <ToDoItem text="Sleep"/>
       <ToDoItem text="Repeat"/>
