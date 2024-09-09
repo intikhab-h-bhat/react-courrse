@@ -6,10 +6,16 @@ const [count, setCount]=useState(0);
 
 useEffect(()=>{
         console.log("component mounted")
+        return function(){
+                console.log("Un mounted")
+        }
 },[])
 
 useEffect(()=>{
-        console.log("Component updated")
+        console.log("Component updated",count)
+        return function(){
+                console.log("Component removed",count)
+        }
 },[count])
 
 return(<div>
