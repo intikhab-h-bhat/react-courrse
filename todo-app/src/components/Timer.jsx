@@ -5,12 +5,15 @@ const Timer=()=>{
 const [time,setTime]=useState(0)
 
 useEffect(()=>{
+console.log("Mounting")
+},[])
+
+useEffect(()=>{
     const timer=setInterval(()=> setTime(time+1),1000)
 
     return function(){
         clearInterval(timer)
     }
-
 },[time])
 
     return(
