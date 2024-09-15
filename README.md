@@ -1,2 +1,2 @@
-# react-todo-app
-Todo Application Using React Js
+# React Course
+* Introduction to React
